@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✏️ SAYFA BAŞLIĞI -->
+
 <title>Neslihan Özdemir — Portfolyo</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -43,9 +43,7 @@
   .nav-links a:hover { color: var(--text); }
   section { padding: 100px 5% 80px; max-width: 960px; margin: 0 auto; }
 
-  /* ============================================================
-     HERO BÖLÜMÜ - FOTOĞRAF EKLENMİŞ HALİ
-     ============================================================ */
+  
   #hero {
     min-height: 100vh;
     display: flex;
@@ -130,7 +128,7 @@
   /* Fotoğrafların kesilmeden tam orijinal haliyle sığması için: contain */
   .slide-item img { max-width: 100%; max-height: 360px; width: auto; height: auto; object-fit: contain; z-index: 2; transform: scale(1.15); display: block; position: relative; }
   
-  /* Arka planda boşluk kalırsa kötü durmasın diye hafif blurlu arka plan estetiği */
+  /* Arka plan estetiği */
   .slide-bg-blur { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; filter: blur(20px) brightness(0.3); opacity: 0.6; z-index: 1; }
 
   /* Slider Butonları */
@@ -139,7 +137,7 @@
   .prev-btn { left: 12px; }
   .next-btn { right: 12px; }
   
-  /* Slider Noktaları (Dots) */
+  /* Slider Noktaları */
   .event-slideshow-dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
   .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.4); cursor: pointer; transition: all 0.3s; }
   .dot.active { background: var(--accent-light); width: 20px; border-radius: 4px; }
@@ -217,7 +215,7 @@
     <div class="hero-divider"></div>
   </div>
 
-  <!-- ✏️ PROFİL FOTOĞRAFI: images klasörüne fotoğrafını koy ve src değerini güncelle -->
+ 
   <div class="hero-photo">
     <img src="images/profil.jpeg" alt="Neslihan Özdemir">
   </div>
@@ -379,7 +377,7 @@
        <div class="event-slideshow" id="pycampSlideshow">
         <div class="slides-container">
           
-          <!-- Her görsel için kesilmeden tam sığacak hücreler -->
+         
           <div class="slide-item">
             <div class="slide-bg-blur" style="background-image: url('images/pycamp.jpeg');"></div>
             <img src="images/pycamp.jpeg" alt="PyCamp etkinliği 1">
